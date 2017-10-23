@@ -1,0 +1,50 @@
+.lead {
+    @include font-size(24);
+    line-height:1.2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin:0;
+}
+
+.heading {
+  @extend .bold;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.heading-lg {
+  @include font-size(48);
+  padding-bottom: 20px;
+}
+
+.heading-md {
+  @include font-size(36);
+  padding-bottom: 10px;
+}
+
+.heading-sm {
+  @extend .bold; 
+  @include font-size(24);
+  line-height: 1.2;
+}
+
+.heading-xs {
+  @include font-size(16);
+  line-height: 1.2;
+  padding-bottom: 8px;
+  margin-bottom:15px;
+}
+
+@media only screen and (max-width : 768px) {
+    .heading-md,
+    .heading-lg {
+       @include font-size(24);
+    }
+    .heading-sm {
+       @include font-size(20); 
+    }
+    .lead {
+       @include font-size(16); 
+    }
+}

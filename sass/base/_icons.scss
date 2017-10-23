@@ -1,0 +1,84 @@
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'motrio-custom' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ion-android-add {
+  &:before {
+    content: $icon-ion-android-add;
+  }
+}
+.icon-ion-android-close {
+  &:before {
+    content: $icon-ion-android-close;
+  }
+}
+.icon-ion-checkmark {
+  &:before {
+    content: $icon-ion-checkmark;
+  }
+}
+.icon-ion-ios-arrow-back {
+  &:before {
+    content: $icon-ion-ios-arrow-back;
+  }
+}
+.icon-ion-ios-arrow-left {
+  &:before {
+    content: $icon-ion-ios-arrow-left;
+  }
+}
+.icon-ion-ios-arrow-thin-right {
+  &:before {
+    content: $icon-ion-ios-arrow-thin-right;
+  }
+}
+.icon-ion-ios-clock-outline {
+  &:before {
+    content: $icon-ion-ios-clock-outline;
+  }
+}
+.icon-ion-ios-close-empty {
+  &:before {
+    content: $icon-ion-ios-close-empty;
+  }
+}
+.icon-ion-ios-email-outline {
+  &:before {
+    content: $icon-ion-ios-email-outline;
+  }
+}
+.icon-ion-ios-location-outline {
+  &:before {
+    content: $icon-ion-ios-location-outline;
+  }
+}
+.icon-ion-ios-plus-empty {
+  &:before {
+    content: $icon-ion-ios-plus-empty;
+  }
+}
+.icon-ion-ios-search-strong {
+  &:before {
+    content: $icon-ion-ios-search-strong;
+  }
+}
+.icon-ion-ios-search {
+  &:before {
+    content: $icon-ion-ios-search;
+  }
+}
+.icon-ion-ios-telephone-outline {
+  &:before {
+    content: $icon-ion-ios-telephone-outline;
+  }
+}

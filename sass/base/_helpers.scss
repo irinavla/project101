@@ -1,0 +1,110 @@
+$displays: ('inline': inline, 'inline-block': inline-block );
+
+@each $display, $mode in $displays { 
+    .display-#{$display} {
+        display: $mode;
+    }
+}
+
+// MARGINS
+$spaceamounts: (10, 20, 30, 40, 50 );
+$sides: (top, bottom, left, right);
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .mg-#{$side}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+  
+    .pd-#{$side}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+  }
+  
+  .pd-#{$space} {
+      padding: #{$space}px !important; 
+  }
+}
+
+@each $side in $sides { 
+    .bordered-#{$side} {
+        border-#{$side}: 1px solid $border-color;
+    }
+}
+
+
+.background-image {
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.list-unstyled {
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+.relative {
+    position:relative;
+}
+
+.absolute {
+    position: absolute;
+}
+.thumb {
+    @extend .relative;
+    .thumb-link {
+        @extend .absolute;
+        width:100%;
+        height:100%;
+    }
+}
+
+.clearfix {
+    @include clearfix();
+}
+
+.display-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+    .display-table-cell {
+        display: table-cell;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+    }
+}
+.display-flex {
+    @include display-flex();
+    &.flex-vertical-center {
+     @include flex-direction(column);   
+/*     @include justify-content(center);   */
+/*     @include align-items(center);*/
+/*     text-align:center;*/
+    } 
+    &.flex-horizontal-center {
+        @include justify-content(center);
+    }
+}
+
+.row-eq-height {
+    @include display-flex();
+    .eq-height {
+        height: 100%;
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.box-shadow {
+    @include box-shadow(0px 0px 0px 0.5px rgba(0,0,0,0.23));
+}

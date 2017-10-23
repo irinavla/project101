@@ -1,0 +1,51 @@
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  white-space: nowrap;
+  vertical-align: middle!important;
+  cursor:pointer;
+  @include user-select(none);
+  @include font-size(20);
+  line-height:1;
+  @include border-radius(4);
+  overflow: visible;
+}
+
+button, 
+html input[type="button"], 
+input[type="reset"], 
+input[type="submit"] {
+    border:none;
+}
+
+@each $color, $hex in $colors {
+    .btn-#{$color} {
+        background: $hex;
+        &:focus,
+        &:visited {
+            background: $hex;
+        }
+        &:hover {
+            background: darken($hex, 10%);
+        }
+    }    
+    .link-#{$color} {
+        color: $hex;
+        @include transition (all 0.2s);
+        &:hover {
+            color: darken($hex, 10%);
+        }
+    }
+    .link-underline-#{$color} {
+        text-decoration: underline;
+        color: $hex;
+        @include transition (all 0.2s);
+        &:hover {
+            text-decoration: underline;
+            color: darken($hex, 10%);
+        }
+    }    
+    .text-#{$color} {
+        color: $hex;
+    } 
+}

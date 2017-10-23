@@ -1,0 +1,58 @@
+/* == VARIABLES == */
+
+/* TYPOGRAPHY */
+$font-path:                         "../fonts/" !default;
+$body-font:                         'Gill Sans MT Pro', sans-serif;
+
+
+/* COLORS */
+$theme-primary:                     #be1423; // red
+$theme-primary-darker:              #87010d;
+$theme-secondary:                   #6d6e71; // grey
+$theme-secondary-darker:            #3b3b3b; 
+$theme-secondary-lighter:           #d1d3d4;
+
+$text-color:                        #808080;
+$heading-color-dark:                #4f4f4f;
+$light-text-color:                  #7c7c7c;
+
+$menu-links-color:                  #3c3c3c;
+$footer-links-color:                #fefefe;
+$footer-text-color:                 #b3b3b3;
+
+
+$colors: (
+    'primary':$theme-primary, 
+    'primary-darker': $theme-primary-darker,
+    'secondary': $theme-secondary,
+    'secondary-lighter':$theme-secondary-lighter,
+    'secondary-darker':$theme-secondary-darker
+);
+
+
+/* BOXES */
+
+$box-grey:                          #f0f0f0;
+$border-color:                      #d7d7d7;
+$border-grey:                       #d7d7d7;
+$border-grey-thin:                  #cbcbcb;
+
+/* ICONS */
+
+$icomoon-font-path:                 "../fonts/icons" !default;
+
+$icon-ion-android-add: "\f2c7";
+$icon-ion-android-close: "\f2d7";
+$icon-ion-checkmark: "\f122";
+$icon-ion-ios-arrow-back: "\f3cf";
+$icon-ion-ios-arrow-left: "\f3d2";
+$icon-ion-ios-arrow-thin-right: "\f3d6";
+$icon-ion-ios-clock-outline: "\f402";
+$icon-ion-ios-close-empty: "\f404";
+$icon-ion-ios-email-outline: "\f422";
+$icon-ion-ios-location-outline: "\f455";
+$icon-ion-ios-plus-empty: "\f489";
+$icon-ion-ios-search-strong: "\f4a4";
+$icon-ion-ios-search: "\f4a5";
+$icon-ion-ios-telephone-outline: "\f4b8";
+
