@@ -56,3 +56,67 @@ $icon-ion-ios-search-strong: "\f4a4";
 $icon-ion-ios-search: "\f4a5";
 $icon-ion-ios-telephone-outline: "\f4b8";
 
+/* === BREAKPOINT VARIABLES === */
+
+// Media query breakpoint values
+
+$screen:        "only screen" !default;
+$mobile-xs:      320px;
+$mobile:         480px;
+$tablet:         740px;
+$desktop:        980px;
+$wide:           1200px;
+
+$mobile-xs-mq:        $screen $mobile-xs; 
+$mobile-mq:           $screen $mobile; 
+$tablet-mq:           $screen $tablet; 
+$desktop-mq:          $screen $desktop; 
+$wide-mq:             $screen $wide; 
+
+
+/* 
+
+=== EXAMPLES ===
+
+// assume min-width (by default) if only a number
+$min-width: 500px;
+
+// set min-width/max-width if both values are numbers
+$min-max-tablet: 600px 800px;
+
+// if one value is a string, assume a feature/value pair
+$max-width-mobile: max-width 1000px;
+
+// string tests together within parentheses, assume each item is a feature value pair
+$height-mq: (min-height 1000px) (orientation portrait);
+$desktop-mq: $screen $desktop; // @media screen and min-width:980px;
+
+=== USAGE ===
+
+== sass
+.myclass {
+     @include breakpoint($min-width) {
+       background: red;
+     }
+}
+
+== css 
+
+@media (min-width: 500px) {
+    .myclass {
+        background: red;
+    }
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+

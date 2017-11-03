@@ -1,7 +1,5 @@
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+    @include box-sizing(border-box);
  }
 
 html {
@@ -28,4 +26,15 @@ a {
        color: inherit;
        text-decoration:none;
     }
+}
+
+
+.wrapper {
+//    @include breakpoint ($desktop-mq) {
+//        background: blue;
+//    }
+    
+//    @include media-desktop-screen {
+//            background: blue;
+//    }
 }

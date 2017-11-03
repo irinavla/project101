@@ -1,4 +1,5 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
+@import 'breakpoint';
 @import 'base/variables';
 @import 'base/typography';
 @import 'base/icons';
@@ -8,4 +9,3 @@
 @import 'components/buttons';
 @import 'components/headings';
 @import 'layout/general';
-

@@ -1,3 +1,9 @@
+@mixin box-sizing ($box) {
+      -moz-box-sizing: $box;
+  -webkit-box-sizing: $box;
+  box-sizing: $box;
+}
+
 // Transition mixin
 // Add CSS transition to any element
 @mixin transition($transition...) {
@@ -243,62 +249,66 @@
 	}
 } 
 
-// Media query breakpoint values
-$largeScreen: 1200px;
-$mediumScreen: 992px;
-$smallScreen: 768px;
-$extraSmallScreen: 480px;
-$smallMobile: 320px;
 
 // Large screen media query mixin
-// Detect large screens and apply css
-@mixin media-l-screen {
-	@media screen and (max-width: $largeScreen) {
-		& {
+// @media screen and (min-width: 1200px)
+@mixin media-wide-screen {
+    @include breakpoint ( $wide-mq ) {
+        & {
 			@content
 		}
-	}
+    }
 }
 
 // Medium screen media query mixin
-// Detect medium screens and apply css
-@mixin media-m-screen {
-	@media screen and (max-width: $mediumScreen) {
-		& {
+// @media screen and (min-width: 980px)
+@mixin media-desktop-screen {
+    @include breakpoint ( $desktop-mq ) {
+        & {
 			@content
 		}
-	}
+    }
 }
 
 // Small screen media query mixin
-// Detect small screens and apply css
-@mixin media-s-screen {
-	@media screen and (max-width: $smallScreen) {
-		& {
+// @media screen and (min-width: 740px)
+@mixin media-tablet-screen {
+    @include breakpoint ( $tablet-mq ) {
+        & {
 			@content
 		}
-	}
+    }
 }
 
 // X-small screen media query mixin
-// Detect x-small screens and apply css
-@mixin media-xs-screen {
-	@media screen and (max-width: $extraSmallScreen) {
-		& {
+// @media screen and (min-width: 480px)
+@mixin media-mobile-screen {
+    @include breakpoint ( $mobile-mq ) {
+        & {
 			@content
 		}
-	}
+    }
 }
 
 // Small mobile screen media query mixin
-// Detect small mobile screens and apply css
+// @media screen and (min-width: 320px)
 @mixin media-s-mobile {
-	@media screen and (max-width: $smallMobile) {
-		& {
+    @include breakpoint ( $mobile-xs-mq ) {
+        & {
 			@content
 		}
-	}
+    }
 }
+
+/* examples 
+.myclass {
+     @include media-desktop-screen {
+        background: blue;
+    }
+}
+*/
+
+
 
 // Hi-res retina screen media query mixin
 // Detect retina screen and apply css

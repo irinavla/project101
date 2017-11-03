@@ -15,5 +15,13 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irinavla/project101.git"
+  },
+  "bugs": {
+    "url": "https://github.com/irinavla/project101/issues"
+  },
+  "homepage": "https://github.com/irinavla/project101#readme"
 }
